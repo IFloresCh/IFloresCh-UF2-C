@@ -6,7 +6,7 @@ int validate(){
    
    do{
       
-        printf("introduce the number between 10 and 5000");
+        printf("introduce u numero entre 10 y 5000");
         scanf("%d",&n);
         i++;
        
