@@ -1,8 +1,10 @@
+
 #include <stdio.h>
-
-int main()
-{
-	printf("Hello World!\n");
-
-	return (0);
+#include "function.h"
+void main(){
+    int n;
+    n= validate();
+    
+   // printf("you introduced %d",n);
 }
+
