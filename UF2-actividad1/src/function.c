@@ -13,9 +13,9 @@ int validate(){
    }while(n>5000 || n< 10 && i <3);
    if(i==3){
        
-       printf("you miss the intention of intriducing the right number ");
+       printf("Introduce un número correcto\n ");
    }else {
        
-        printf("you introduced the number correctly");
+        printf("Es un número válido");
    }
 }
