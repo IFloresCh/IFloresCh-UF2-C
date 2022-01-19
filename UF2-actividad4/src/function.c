@@ -1,12 +1,15 @@
 #include "function.h"
-int validacion(){
-    float n, m_apr, m_rep;
+int validacion(int n){
+    float n, m_apr, m_rep, i;
     int q_apr, q_rep;
 
     do{
         printf("introduce una nota: ");
-        scanf("%.2f", &n);
-    }while(n > 10 || n < 0);
+        scanf("%f", &n);
 
+    }while(n > 10 || n < 0;
+    return n;
 }
-int
+float promedio (int n){
+    int i;
+}
