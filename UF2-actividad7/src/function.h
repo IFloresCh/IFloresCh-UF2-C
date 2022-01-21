@@ -1,5 +1,5 @@
 
 #define FUNCTIONS_H_
 
-int validate();
-int cantidad();
+int cantidad(int);
+int validate(int);

@@ -1,27 +1,48 @@
 #include "function.h"
 
-int cantidad(){
-    int i, size;
+int cantidad(int i){
+    int i;
     do{
-        printf("Introduce la cantidad de");
+        printf("Introduce la cantidad de números a introducir entre 1 y 50: ");
         scanf("%d", &i);
+        if ( i > 50 || i < 1){
+            printf("Introduce un numero correcto\n");
+        }
     }while ( i > 50 || i < 1);
-    return size;
+
+    return i;
 }
 
-int validate(){
-    int n, i, size;
-    size=cantidad(size);
+int validate(int i){
     do{
-        for(i=0; i < size;i++);
-            printf("Introduce un numero entre 0 y 10");
-            scanf("%d", &n);
-
-    }while (n < 0 || n >10);
-    if (n < 0 || n > 10){
-        printf("Introduce un número correcto");
+        printf("Introduce un numero entre 0 y 10");
+        scanf("%d",&i);
+        if(i<0|| i>10){
+            printf("introduce un valor correcto!\n");
     }
+    }while (i < 0 || i >10);
+
+    return i;
+}   
+
+void minmax() {
+	int size, max = a[0], min = a[0];
+ 
+	for (int i = 0; i < size; i++) {
+		if (a[i] > max) {
+			max = a[i];
+		}
+		if (a[i] < min) {
+			min = a[i];
+		}
+	}
+ 
+	printf("max is %d\n", max);
+	printf("min is %d\n", min);
+	system("pause");
+	return 0;
 }
+
 
 
 //Demani per teclat la dimensió de l'array (nombre natural entre 1 i 50 inclosos)
