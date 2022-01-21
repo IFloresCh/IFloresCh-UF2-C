@@ -1,8 +1,16 @@
 #include <stdio.h>
+#include "function.h"
 
-int main()
+void main()
 {
-	printf("Hello World!\n");
+	long numero, potencia;
+	printf("Introduce la base: ");
+	scanf("%ld", &numero);
+	printf("Introduce la potenia: ");
+	scanf("%ld", &potencia);
 
-	return (0);
+    long elevadoAlCubo = potenciaRecursiva(numero, potencia);
+    printf("Probando con recursividad. %ld elevado a %ld es %ld\n", numero, potencia, elevadoAlCubo);
+    long elevadoConWhile = potenciaConWhile(numero, potencia);
+    printf("Probando con while. %ld elevado a %ld es %ld\n", numero, potencia, elevadoAlCubo);
 }
