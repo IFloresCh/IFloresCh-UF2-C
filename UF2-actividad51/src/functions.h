@@ -1,8 +1,8 @@
 struct biblio{
-    char titulo[100];
-    char autor[100];
-    char editorial[100];
-    int data;
+    char titulo[50];
+    char autor[50];
+    char editorial[50];
+    int date;
 };
 
 struct disponibles{
@@ -13,8 +13,8 @@ struct disponibles{
 };
 
 int validate();
-void modifyData(struct biblio *, int);
-void printData(struct biblio *, int);
+void modifyData(struct disponibles *, int);
+void printData(struct disponibles *, int);
 
 
 

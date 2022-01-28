@@ -19,11 +19,11 @@ void modifyData(struct disponibles *o,int size){ //punter a office
         printf("Introduce la editorial del libro: \n");
         scanf("%s",o[i].biblioteca.editorial);
         printf("Año de publicacion: \n");
-        scanf("%d",o[i].biblioteca.data);
+        scanf("%d",&o[i].biblioteca.date);
         printf("Introduce la cantidad disponible del libro: \n");
-        scanf("%d",o[i].disp);
+        scanf("%d",&o[i].disp);
         printf("Nombre de  usuario que le ha cogido en préstamo:   \n");
-        scanf("%s",&o[i].usuario_p);
+        scanf("%s",o[i].usuario_p);
         printf("Cuantos dias en prestamo: \n");
         scanf("%d",&o[i].dias_p);
     }
@@ -36,7 +36,7 @@ void printData(struct disponibles *o, int size){
         printf("Titulo del libro: %s\n", o[i].biblioteca.titulo);
         printf("Autor del libro: %s\n"),o[i].biblioteca.autor;
         printf("Editorial del libro: %s\n",o[i].biblioteca.editorial);
-        printf("Año de publicacion: %d\n",o[i].biblioteca.data);
+        printf("Año de publicacion: %d\n",o[i].biblioteca.date);
         printf("Unidades disponibles: %d\n",o[i].disp);
         printf("Usuario en prestamo: %s\n",o[i].usuario_p);
         printf("Tiempo de prestamo: %d\n",o[i].dias_p);
