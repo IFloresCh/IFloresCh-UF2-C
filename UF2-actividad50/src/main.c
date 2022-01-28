@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "function.h"
+#include "functions.h"
 
 void main() {
     int size;
