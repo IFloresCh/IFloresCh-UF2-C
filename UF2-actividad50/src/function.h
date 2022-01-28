@@ -1,3 +1,4 @@
+#define FUNCTIONS_H_
 struct address{
     char street[100];
     char city[50];

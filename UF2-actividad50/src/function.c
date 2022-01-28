@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "functions.h"
+#include "function.h"
 
 int validate(){
     int num;
