@@ -4,7 +4,7 @@
 void main() {
     int size;
     size = validate();
-	struct biblio biblioteca[size];
+	struct disponibles biblioteca[size];
 	modifyData(biblioteca, size);
 	printData(biblioteca, size);
 }
