@@ -1,4 +1,4 @@
-
+//functions.h
 struct address{
     char street[100];
     char city[50];
