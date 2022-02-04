@@ -1,12 +1,24 @@
 #include <stdio.h>
-#include "functions.h"
+#define SIZE 100
+void evenNumbers();
 
-void main() {
-    int size;
-    size = validate();
-	struct disponibles biblioteca[size];
-	modifyData(biblioteca, size);
-	printData(biblioteca, size);
+void main(){
+    printf("100 números pares generados proceduralmente:\n");
+    evenNumbers();
+   
 }
-	
-//https://kesquivel.files.wordpress.com/2013/05/estructuras2013final2.pdf
+
+void evenNumbers(){
+    int j=1,i=0,pares[SIZE];
+    for (i=0;i<=SIZE+1;i++){
+           pares[i]=j*2;
+           j++;
+    }
+    
+    for (i=0;i<=SIZE;i++){
+        printf("%d ",pares[i]);
+    
+    }
+}
+
+    
