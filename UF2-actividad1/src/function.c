@@ -13,7 +13,7 @@ int validate(){
    }while(n>5000 || n< 10 && i <3);
    if(i==3){
        
-       printf("Introduce un número correcto\n ");
+       printf("Adios!\n ");
    }else {
        
         printf("Es un número válido");
